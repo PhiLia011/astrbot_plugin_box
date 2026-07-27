@@ -64,7 +64,7 @@ class BoxPlugin(Star):
         event: AiocqhttpMessageEvent,
         user_id: str = "",
         send_image: bool = True,
-        real_info: bool = True,
+        real_info: bool = False,
     ):
         """
         Query QQ user profile information.
@@ -72,7 +72,7 @@ class BoxPlugin(Star):
             user_id(string): Target QQ user ID. It must be numeric.
                 Defaults to the current user when empty.
             send_image(bool): Whether to send the rendered image. Defaults to True.
-            real_info(bool): Whether to use real information. Defaults to True.
+            real_info(bool): Whether to use real information. Defaults to False.
         """
         target_id = str(user_id).strip() or event.get_sender_id()
 
