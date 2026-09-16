@@ -19,6 +19,16 @@ FIELD_MAPPING: list[dict[str, Any]] = [
     {"key": "card", "label": "群昵称", "source": "info2"},
     {"key": "title", "label": "群头衔", "source": "info2"},
     {
+        "key": "role",
+        "label": "群身份",
+        "source": "info2",
+        "transform": lambda v: {
+            "owner": "群主",
+            "admin": "管理员",
+            "member": "群员",
+        }.get(v),
+    },
+    {
         "key": "sex",
         "label": "性别",
         "source": "info1",
@@ -54,6 +64,7 @@ FIELD_MAPPING: list[dict[str, Any]] = [
         "skip_values": ["0-0-0", ""],
     },
     {"key": "address", "label": "现居", "source": "computed"},
+    {"key": "area", "label": "地区", "source": "info2"},
     {
         "key": "makeFriendCareer",
         "label": "职业",
@@ -108,6 +119,14 @@ FIELD_MAPPING: list[dict[str, Any]] = [
         else None,
     },
     {
+        "key": "last_sent_time",
+        "label": "最后发言",
+        "source": "info2",
+        "transform": lambda v: datetime.fromtimestamp(v).strftime("%Y-%m-%d %H:%M")
+        if v
+        else None,
+    },
+    {
         "key": "qqLevel",
         "label": "QQ等级",
         "source": "info1",
@@ -127,6 +146,16 @@ FIELD_MAPPING: list[dict[str, Any]] = [
         "source": "info1",
         "multiline": True,
         "wrap_width": 15,
+    },
+    {
+        "key": "customStatusDescInfo",
+        "label": "自定义状态",
+        "source": "info1",
+    },
+    {
+        "key": "qidian_enterprise_name",
+        "label": "企点企业",
+        "source": "info1",
     },
 ]
 
