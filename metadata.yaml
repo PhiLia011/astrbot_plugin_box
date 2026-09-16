@@ -1,9 +1,9 @@
 name: astrbot_plugin_box
 display_name: QQ资料卡片
-desc: 遵循OnebotV11协议，以卡片形式展示QQ用户主页资料
+desc: 遵循 OnebotV11 协议，以卡片形式展示 QQ 用户主页资料（fork 版：新增群身份/地区/最后发言/自定义状态/企点企业等 SnowLuma 扩展字段）
 help: 略
-version: v1.4.0
-author: Zhalslar
-repo: https://github.com/Zhalslar/astrbot_plugin_box
+version: v1.4.1-snowluma
+author: Zhalslar & PhiLia011
+repo: https://github.com/PhiLia011/astrbot_plugin_box
 support_platforms:
   - aiocqhttp
