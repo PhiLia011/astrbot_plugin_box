@@ -18,6 +18,27 @@ _✨ QQ资料卡片插件 ✨_
 
 严格遵循OnebotV11协议，获取QQ用户主页资料, 并以图片形式展示
 
+> [!NOTE]
+> ### 📌 关于本仓库（Fork 版本）
+>
+> 本仓库是 [Zhalslar/astrbot_plugin_box](https://github.com/Zhalslar/astrbot_plugin_box) 的 **fork**，
+> 由 [@PhiLia011](https://github.com/PhiLia011) 维护。
+>
+> **新增内容**：SnowLuma 协议端独有的 5 个扩展字段
+>
+> | 字段 | 说明 |
+> |------|------|
+> | 群身份 | 群主 / 管理员 / 群员 |
+> | 地区 | 用户所在地区 |
+> | 最后发言 | 最近一次发言时间 |
+> | 自定义状态 | QQ 自定义状态 |
+> | 企点企业 | 企点企业名称 |
+>
+> 这些字段在 NapCat / LLOneBot 上本来就有，但 SnowLuma 之前取不到。
+> **如果你用的是 SnowLuma，装这个版本能显示更完整的资料。**
+>
+> 上游版本见：[Zhalslar/astrbot_plugin_box](https://github.com/Zhalslar/astrbot_plugin_box)
+
 ## 📦 安装
 
 在astrbot的插件面板上通过链接安装：[https://github.com/Zhalslar/astrbot_plugin_box](https://github.com/Zhalslar/astrbot_plugin_box)
